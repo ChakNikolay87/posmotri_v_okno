@@ -157,7 +157,7 @@ ol {
 }
 
 .visually-hidden {
-    position: absolute;
+    position: fixed;
     inline-size: 1px;
     block-size: 1px;
     overflow: hidden;
@@ -165,6 +165,7 @@ ol {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
 
 .search-form__fieldset {
     border: none;
