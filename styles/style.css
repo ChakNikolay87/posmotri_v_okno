@@ -57,7 +57,6 @@ ol {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    /*font-size: 18px;*/
 }
 
 .content__details {
@@ -73,15 +72,8 @@ ol {
     gap: 20px;
     max-height: 300px;
     overflow-y: auto;
+    position: relative;
 }
-.preloader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10; /* Убедитесь, что прелоадер поверх основного контента */
-}
-
 
 .result__video-container {
     position: relative;
@@ -98,19 +90,13 @@ ol {
 }
 
 .content__list-item {
-    position: relative;
     display: flex;
     gap: 10px;
-}
-
-.content__list-item:last-child {
-    margin-bottom: 0;
 }
 
 .content__video-card {
     display: flex;
     gap: 10px;
-
 }
 
 .content__video-card-thumbnail {
@@ -178,7 +164,6 @@ ol {
     white-space: nowrap;
 }
 
-
 .search-form__fieldset {
     border: none;
 }
@@ -226,11 +211,11 @@ ol {
     background-color: #fff;
 }
 
-
 .search-form__label:has(.search-form__textfield:focus-visible) {
     border: 2px solid #fff;
     border-radius: 4px;
 }
+
 .search-form__textfield {
     background-color: #000;
     color: #fff;
@@ -244,31 +229,6 @@ ol {
 
 .search-form__textfield:focus {
     outline: none;
-}
-
-.search-form__pseudo-checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #6d6d6d;
-    border-radius: 3px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-}
-
-
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-    border: 2px solid #fff;
-    border-radius: 4px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -287,7 +247,6 @@ button {
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
     width: 150px;
-
 }
 
 button:hover {
@@ -314,7 +273,6 @@ button:focus-visible {
     transition: background-color 0.2s ease, transform 0.1s ease;
     outline: none;
 }
-
 
 .content__card-link:hover {
     background-color: #333;
