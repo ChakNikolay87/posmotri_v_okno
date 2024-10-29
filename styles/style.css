@@ -273,6 +273,7 @@ button:focus-visible {
     outline: none;
 }
 
+
 .content__card-link:hover {
     background-color: #333;
 }
