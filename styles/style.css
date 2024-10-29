@@ -180,15 +180,16 @@ ol {
     cursor: pointer;
 }
 
-.search-form__textfield {
-    appearance: none;
-    padding: 8px 12px;
-    font-size: 16px;
-    font-family: inherit, sans-serif;
-    border: none;
-    border-bottom: 2px solid #6d6d6d;
-    background-color: transparent;
-    color: #fff;
+.search-form__pseudo-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6d6d6d;
+    border-radius: 3px;
+    background-color: #000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .search-form__checkbox-list {
@@ -201,7 +202,7 @@ ol {
     height: 20px;
     border: 2px solid #6d6d6d;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,12 +213,12 @@ ol {
     content: '';
     width: 12px;
     height: 12px;
-    background-color: #3498db;
+    background-color: #fff;
 }
 
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
-    border: 2px solid #3498db;
+    border: 2px solid #fff;
     border-radius: 4px;
 }
 
@@ -241,12 +242,12 @@ ol {
     content: '';
     width: 12px;
     height: 12px;
-    background-color: #3498db;
+    background-color: #fff;
 }
 
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-    border: 2px solid #3498db;
+    border: 2px solid #fff;
     border-radius: 4px;
 }
 
