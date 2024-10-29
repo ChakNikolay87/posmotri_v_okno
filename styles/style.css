@@ -57,6 +57,7 @@ ol {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    /*font-size: 18px;*/
 }
 
 .content__details {
@@ -121,8 +122,8 @@ ol {
 
 .search-form__fieldset-title {
     font-weight: 700;
-    font-size: 20px;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .title {
@@ -220,6 +221,16 @@ ol {
 .search-form__label:has(.search-form__textfield:focus-visible) {
     border: 2px solid #fff;
     border-radius: 4px;
+}
+.search-form__textfield {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-family: inherit, sans-serif;
 }
 
 .search-form__textfield:focus {
